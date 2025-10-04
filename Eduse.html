@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/Eduse logo.webp">
+    <title>Eduse</title>
+    <link rel="stylesheet" href="Eduse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header>
+
+        <!-- ===== NAVBAR 1 ===== -->
+        <div class="navbar top-nav">
+            <ul class="nav-left">
+                <li>About Us</li>
+                <li>Track Order</li>
+                <li>Contact</li>
+                <li>Stores</li>
+            </ul>
+
+            <p class="nav-center">Eduse Marketing Pvt. Ltd.</p>
+
+            <div class="nav-right">
+                <span>Need help? Call Us</span>
+                <button><i class="fa-solid fa-phone"></i> +91 98765 43210</button>
+            </div>
+        </div>
+
+        <!-- ===== NAVBAR 2 ===== -->
+        <div class="navbar middle-nav">
+            <div class="logo">
+                <img src="./assets/Eduse logo.webp" alt="Logo">
+            </div>
+
+            <div class="search-area">
+                <div class="category">
+                    <select>
+                        <option>All Categories</option>
+                        <option>Fashion</option>
+                        <option>Electronics</option>
+                        <option>Beauty</option>
+                        <option>Home</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search for products...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="icons">
+                <div class="icon"><i class="fa-regular fa-heart"></i><span>Wishlist</span></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></div>
+                <div class="icon"><i class="fa-regular fa-user"></i><span>Account</span></div>
+            </div>
+        </div>
+
+        <!-- ===== NAVBAR 3 ===== -->
+        <div class="navbar bottom-nav">
+            <div class="categories">
+                <button id="categoryBtn"><i class="fa-solid fa-bars"></i> All Categories</button>
+                <ul id="categoryList">
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Home</li>
+                    <li>Beauty</li>
+                    <li>Sports</li>
+                </ul>
+            </div>
+
+            <ul class="menu">
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Deals</li>
+                <li>New Arrivals</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- ===== BANNER SECTION ===== -->
+    <section class="banner">
+        <div class="slider">
+            <div class="slide active">
+                <img src="./assets/banner1.jpg" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="./assets//banner2.jpg" alt="Banner 2">
+            </div>
+            <div class="slide">
+                <img src="./assets//banner3.jpg" alt="Banner 3">
+            </div>
+            <div class="slide">
+                <img src="./assets//banner4.jpg" alt="Banner 4">
+            </div>
+
+            <!-- Buttons -->
+            <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+
+
+    <!-- ===== PRODUCT CATEGORY SECTION ===== -->
+    <section class="product-category">
+        <h2>Product Category</h2>
+        <div class="category-container">
+            <!-- Left Image -->
+            <div class="left-image">
+                <img src="./assets/kurtiImage6.jpg" alt="Category 1">
+            </div>
+
+            <!-- Right Images -->
+            <div class="right-images">
+                <img src="./assets/kurtiImage3.jpg" alt="Category 2">
+                <img src="./assets/kurtiImage3.jpg" alt="Category 3">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== POPULAR PRODUCTS SECTION ===== -->
+    <section class="popular-products">
+        <div class="section-header">
+            <h2>Popular Products</h2>
+            <button class="all-products-btn">All Products</button>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./assets/nailpaint1.jpg" alt="Product 1">
+                    <div class="quick-view"><i class="fa-solid fa-eye"></i></div>
+                </div>
+                <h3>Stylish Watch</h3>
+
+                <!-- Price + Add to Cart in one line -->
+                <div class="product-action">
+                    <span class="price">₹1,299</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Quantity selector (hidden initially) -->
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <span class="qty">1</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Quantity selector (hidden initially) -->
+            <div class="quantity-selector">
+                <button class="decrease">-</button>
+                <span class="qty">1</span>
+                <button class="increase">+</button>
+            </div>
+        </div>
+
+
+
+
+        <!-- ===== QUICK VIEW MODAL ===== -->
+        <div class="modal" id="quickViewModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImg" src="" alt="Product Image">
+                <h3 id="modalTitle"></h3>
+                <p id="modalPrice"></p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <!-- 1st Column -->
+    <div class="footer-col">
+      <h3>Get in Touch</h3>
+      <ul>
+    <li><i class="fa-solid fa-location-dot"></i> 12, 1st floor Ramnik Complex, NIT-1 Faridabad, Haryana (121001)</li>
+    <li><i class="fa-solid fa-envelope"></i> Info@edusemarketing.com</li>
+    <li><i class="fa-solid fa-phone"></i> 0129-4889489</li>
+    <li><i class="fa-brands fa-whatsapp"></i> +91-7888673594</li>
+  </ul>
+    </div>
+
+    <!-- 2nd Column -->
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><i class="fa-solid fa-angle-right"></i> About Us</li>
+        <li><i class="fa-solid fa-angle-right"></i> Product catalouge</li>
+        <li><i class="fa-solid fa-angle-right"></i> Buisness Plan</li>
+        <li><i class="fa-solid fa-angle-right"></i> Why Choose Us</li>
+        <li><i class="fa-solid fa-angle-right"></i> Our Initilatives</li>
+        <li><i class="fa-solid fa-angle-right"></i> Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- 3rd Column -->
+    <div class="footer-col">
+      <h3>Policies</h3>
+      <ul>
+        <li><i class="fa-solid fa-angle-right"></i> Refund Policy</li>
+        <li><i class="fa-solid fa-angle-right"></i> Promotion & Targets</li>
+        <li><i class="fa-solid fa-angle-right"></i> One Pan Card - One Account</li>
+        <li><i class="fa-solid fa-angle-right"></i> Disclaimer</li>
+        <li><i class="fa-solid fa-angle-right"></i> Term's & Conditions</li>
+        <li><i class="fa-solid fa-angle-right"></i>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <!-- 4th Column -->
+    <div class="footer-col">
+      <h3>Direct Seller</h3>
+      <ul>
+        <li><i class="fa-solid fa-angle-right"></i> Code of Conduct</li>
+        <li><i class="fa-solid fa-angle-right"></i> DSA Agreement</li>
+        <li><i class="fa-solid fa-angle-right"></i> Obligations & Prohibation</li>
+        <li><i class="fa-solid fa-angle-right"></i> Tax Implications /  ITR 194R</li>
+        <li><i class="fa-solid fa-angle-right"></i> Grievance</li>
+        <li><i class="fa-solid fa-angle-right"></i> e-Learning</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Social Media -->
+  <div class="footer-social">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+    <script src="Eduse.js"></script>
+
+
+
+</body>
+
+</html>
