@@ -14,14 +14,13 @@
 
     <!-- HEADER START -->
     <header>
-
         <!-- ===== NAVBAR 1 ===== -->
         <div class="navbar top-nav">
             <ul class="nav-left">
-                <li>About Us</li>
-                <li>Track Order</li>
-                <li>Contact</li>
-                <li>Stores</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Stores</a></li>
             </ul>
 
             <p class="nav-center">Eduse Marketing Pvt. Ltd.</p>
@@ -34,10 +33,17 @@
 
         <!-- ===== NAVBAR 2 ===== -->
         <div class="navbar middle-nav">
-            <div class="logo">
-                <img src="./assets/Eduse logo.webp" alt="Logo">
+            <!-- Hamburger (for mobile) -->
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
             </div>
 
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#"><img src="./assets/Eduse logo.webp" alt="Eduse Logo" /></a>
+            </div>
+
+            <!-- Search area -->
             <div class="search-area">
                 <div class="category">
                     <select>
@@ -49,39 +55,59 @@
                     </select>
                 </div>
                 <div class="search-box">
-                    <input type="text" placeholder="Search for products...">
+                    <input type="text" placeholder="Search for products..." />
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
 
+            <!-- Icons -->
             <div class="icons">
-                <div class="icon"><i class="fa-regular fa-heart"></i><span>Wishlist</span></div>
-                <div class="icon"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></div>
-                <div class="icon"><i class="fa-regular fa-user"></i><span>Account</span></div>
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i><span>Wishlist</span>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Cart</span>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-user"></i><span>Account</span>
+                </div>
             </div>
         </div>
 
         <!-- ===== NAVBAR 3 ===== -->
         <div class="navbar bottom-nav">
+            <!-- Left side: All Categories (Always Visible) -->
             <div class="categories">
-                <button id="categoryBtn"><i class="fa-solid fa-bars"></i> All Categories</button>
+                <button id="categoryBtn">
+                    <i class="fa-solid fa-chevron-down"></i> All Categories
+                </button>
                 <ul id="categoryList">
-                    <li>Fashion</li>
-                    <li>Electronics</li>
-                    <li>Home</li>
-                    <li>Beauty</li>
-                    <li>Sports</li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Sports</a></li>
                 </ul>
             </div>
 
-            <ul class="menu">
-                <li>Home</li>
-                <li>Shop</li>
-                <li>Deals</li>
-                <li>New Arrivals</li>
-                <li>Blog</li>
+            <!-- Mobile Menu Icon -->
+            <div class="mobile-menu-icon" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Right side: Menu Links -->
+            <ul class="menu" id="mainMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
         </div>
+
+
+
+
 
     </header>
     <!-- HEADER END -->
@@ -113,19 +139,21 @@
 
     <!-- ===== PRODUCT CATEGORY SECTION ===== -->
     <section class="product-category">
-        <h2>Product Category</h2>
-        <div class="category-container">
-            <!-- Left Image -->
-            <div class="left-image">
-                <img src="./assets/kurtiImage6.jpg" alt="Category 1">
-            </div>
+        
+            <h2>Product Category</h2>
+            <div class="category-container">
+                <!-- Left Image -->
+                <div class="left-image">
+                    <img src="./assets/kurtiImage6.jpg" alt="Category 1">
+                </div>
 
-            <!-- Right Images -->
-            <div class="right-images">
-                <img src="./assets/kurtiImage3.jpg" alt="Category 2">
-                <img src="./assets/kurtiImage3.jpg" alt="Category 3">
+                <!-- Right Images -->
+                <div class="right-images">
+                    <img src="./assets/kurtiImage3.jpg" alt="Category 2">
+                    <img src="./assets/kurtiImage3.jpg" alt="Category 3">
+                </div>
             </div>
-        </div>
+       
     </section>
 
 
@@ -422,72 +450,73 @@
 
 
     <!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="footer-grid">
-    <!-- 1st Column -->
-    <div class="footer-col">
-      <h3>Get in Touch</h3>
-      <ul>
-    <li><i class="fa-solid fa-location-dot"></i> 12, 1st floor Ramnik Complex, NIT-1 Faridabad, Haryana (121001)</li>
-    <li><i class="fa-solid fa-envelope"></i> Info@edusemarketing.com</li>
-    <li><i class="fa-solid fa-phone"></i> 0129-4889489</li>
-    <li><i class="fa-brands fa-whatsapp"></i> +91-7888673594</li>
-  </ul>
-    </div>
+    <footer class="footer">
+        <div class="footer-grid">
+            <!-- 1st Column -->
+            <div class="footer-col">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 12, 1st floor Ramnik Complex, NIT-1 Faridabad, Haryana
+                        (121001)</li>
+                    <li><i class="fa-solid fa-envelope"></i> Info@edusemarketing.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 0129-4889489</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +91-7888673594</li>
+                </ul>
+            </div>
 
-    <!-- 2nd Column -->
-    <div class="footer-col">
-      <h3>Company</h3>
-      <ul>
-        <li><i class="fa-solid fa-angle-right"></i> About Us</li>
-        <li><i class="fa-solid fa-angle-right"></i> Product catalouge</li>
-        <li><i class="fa-solid fa-angle-right"></i> Buisness Plan</li>
-        <li><i class="fa-solid fa-angle-right"></i> Why Choose Us</li>
-        <li><i class="fa-solid fa-angle-right"></i> Our Initilatives</li>
-        <li><i class="fa-solid fa-angle-right"></i> Contact Us</li>
-      </ul>
-    </div>
+            <!-- 2nd Column -->
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i> About Us</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Product catalouge</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Buisness Plan</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Why Choose Us</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Our Initilatives</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Contact Us</li>
+                </ul>
+            </div>
 
-    <!-- 3rd Column -->
-    <div class="footer-col">
-      <h3>Policies</h3>
-      <ul>
-        <li><i class="fa-solid fa-angle-right"></i> Refund Policy</li>
-        <li><i class="fa-solid fa-angle-right"></i> Promotion & Targets</li>
-        <li><i class="fa-solid fa-angle-right"></i> One Pan Card - One Account</li>
-        <li><i class="fa-solid fa-angle-right"></i> Disclaimer</li>
-        <li><i class="fa-solid fa-angle-right"></i> Term's & Conditions</li>
-        <li><i class="fa-solid fa-angle-right"></i>Privacy Policy</li>
-      </ul>
-    </div>
+            <!-- 3rd Column -->
+            <div class="footer-col">
+                <h3>Policies</h3>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i> Refund Policy</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Promotion & Targets</li>
+                    <li><i class="fa-solid fa-angle-right"></i> One Pan Card - One Account</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Disclaimer</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Term's & Conditions</li>
+                    <li><i class="fa-solid fa-angle-right"></i>Privacy Policy</li>
+                </ul>
+            </div>
 
-    <!-- 4th Column -->
-    <div class="footer-col">
-      <h3>Direct Seller</h3>
-      <ul>
-        <li><i class="fa-solid fa-angle-right"></i> Code of Conduct</li>
-        <li><i class="fa-solid fa-angle-right"></i> DSA Agreement</li>
-        <li><i class="fa-solid fa-angle-right"></i> Obligations & Prohibation</li>
-        <li><i class="fa-solid fa-angle-right"></i> Tax Implications /  ITR 194R</li>
-        <li><i class="fa-solid fa-angle-right"></i> Grievance</li>
-        <li><i class="fa-solid fa-angle-right"></i> e-Learning</li>
-      </ul>
-    </div>
-  </div>
+            <!-- 4th Column -->
+            <div class="footer-col">
+                <h3>Direct Seller</h3>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i> Code of Conduct</li>
+                    <li><i class="fa-solid fa-angle-right"></i> DSA Agreement</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Obligations & Prohibation</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Tax Implications / ITR 194R</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Grievance</li>
+                    <li><i class="fa-solid fa-angle-right"></i> e-Learning</li>
+                </ul>
+            </div>
+        </div>
 
-  <!-- Social Media -->
-  <div class="footer-social">
-    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-  </div>
+        <!-- Social Media -->
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
 
-  <!-- Copyright -->
-  <div class="footer-bottom">
-    <p>&copy; 2025 Your Company. All Rights Reserved.</p>
-  </div>
-</footer>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 
 
